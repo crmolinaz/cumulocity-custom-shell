@@ -1,0 +1,15 @@
+{
+    "description": "Shell plugin",
+    "ngModules": ["angularjs.my-custom-shell"],
+    "js": [
+        "shell.module.js",
+        "shell.config.js",
+        
+        "views/shell.controller.js"
+    ],
+    "imports": [],
+    "css": [
+        "css/style.css"
+    ],
+    "copy": []
+}

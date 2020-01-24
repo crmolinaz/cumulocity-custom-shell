@@ -1,0 +1,53 @@
+{
+  "name": "my-devicemanagement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "c8ycli server -u SERVER_URL",
+    "build": "c8ycli build",
+    "deploy": "c8ycli deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/animations": "7.2.2",
+    "@angular/cdk": "7.3.7",
+    "@angular/common": "7.2.2",
+    "@angular/compiler": "7.2.2",
+    "@angular/core": "7.2.2",
+    "@angular/forms": "7.2.2",
+    "@angular/http": "7.2.2",
+    "@angular/platform-browser": "7.2.2",
+    "@angular/platform-browser-dynamic": "7.2.2",
+    "@angular/router": "7.2.2",
+    "@angular/upgrade": "7.2.2",
+    "@c8y/ngx-components": "1005.0.12",
+    "core-js": "^2.6.2",
+    "rxjs": "~6.3.3",
+    "url-search-params-polyfill": "6.0.0",
+    "zone.js": "~0.8.28",
+    "@c8y/ng1-modules": "1005.0.12",
+    "angular": "1.6.9",
+    "@c8y/style": "1005.0.12"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.10.4",
+    "@angular/compiler-cli": "7.2.2",
+    "@angular/language-service": "7.2.2",
+    "typescript": "3.1.6",
+    "@c8y/cli": "1005.0.12"
+  },
+  "c8y": {
+    "application": {
+      "name": "my-devicemanagement",
+      "contextPath": "my-devicemanagement",
+      "key": "my-devicemanagement-application-key",
+      "upgrade": true,
+      "rightDrawer": true,
+      "contentSecurityPolicy": "base-uri 'none'; default-src 'self' 'unsafe-inline' http: https: ws: wss:; connect-src 'self' *.billwerk.com http: https: ws: wss:;  script-src 'self' open.mapquestapi.com *.twitter.com *.twimg.com 'unsafe-inline' 'unsafe-eval' data:; style-src * 'unsafe-inline' blob:; img-src * data:; font-src * data:; frame-src *;"
+    },
+    "cli": {}
+  }
+}

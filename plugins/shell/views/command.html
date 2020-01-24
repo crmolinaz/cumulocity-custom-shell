@@ -1,0 +1,25 @@
+  <div class="card">
+    <div class="card-header">
+      <h4 class="card-title"><i c8y-icon="terminal"></i> {{'Command' | translate}}</h4>
+      <div class="flex-item-right">
+        <device-status device="deviceStatus.device" refresh="deviceStatus.refresh"></device-status>
+      </div>
+    </div>
+    <hr>
+    <div class="card-block">
+      <textarea class="form-control text-code" rows="10" ng-model="command.text"></textarea>
+    </div>
+    <div class="card-footer separator">
+      <button type="button" class="btn btn-primary" ng-click="ctrl.execute(command, ctrl.commandDeliveryType)" ng-disabled="!command.text || ctrl.sendingCommand" translate>Execute</button>
+      <span class="c8y-select-wrapper">
+        <select
+          ng-disabled="!command.text || ctrl.sendingCommand"
+          ng-options="(deliveryType | translate) for deliveryType in ctrl.standardDeliveryTypes track by deliveryType"
+          ng-model="ctrl.commandDeliveryType"
+          style="width: 120px; padding-top: 2px; margin-left: 5px; display:unset;"
+          required
+        >
+        </select>
+      </span>
+    </div>
+  </div>
