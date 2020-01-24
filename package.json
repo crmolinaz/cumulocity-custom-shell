@@ -29,7 +29,7 @@
     "url-search-params-polyfill": "6.0.0",
     "zone.js": "~0.8.28",
     "@c8y/ng1-modules": "1005.0.12",
-    "angular": "1.6.9",
+    "angular": "1.7.9",
     "@c8y/style": "1005.0.12"
   },
   "devDependencies": {
